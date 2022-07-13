@@ -1,0 +1,50 @@
+---
+$title
+$description
+$path
+---
+
+<div class="user-input row">
+  <div id="generator">
+    <h1>{{$title}}</h1>
+    <h2>{{$description}}</h2>
+    <form role="form" action="generate" id="coverForm" method="post">
+      <div class="col-sm-12">
+        <div id="coverbox">
+          <div id="coverprint" style="background-image: url('images/board/2.jpg')"><img src="images/blackbg.png"></div>
+          <div id="loading"></div>
+        </div>
+      </div>
+      <div class="col-sm-12" id="settings">
+        <div class="row">
+          <div class="col-sm-4">
+            <label for="text1">題字</label>
+            <input type="text" id="text1" class="form-control" name="text1" value="正大光明" placeholder="請輸入題字" style="width:100%">
+          </div>
+          <div class="col-sm-3">
+            <label for="text2">上款</label>
+            <input type="text" id="text2" class="form-control" name="text2" value="" placeholder="可選填" style="width:100%">
+          </div>
+          <div class="col-sm-3">
+            <label for="text3">下款</label>
+            <input type="text" id="text3" class="form-control" name="text3" value="康熙@玉璽" placeholder="可選填" style="width:100%">
+          </div>
+          <div class="col-sm-2">
+            <label for="background">匾額樣式</label>
+            <select class="form-control" name="background" id="background">
+              <option value="1">黑底</option>
+              <option value="4">黑底金框</option>
+              <option value="3">紅底</option>
+              <option value="2" selected="selected">紅底金框</option>
+              <option value="7">藍底</option>
+              <option value="6">藍底金框</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <input type="hidden" value="" name="directpost" id="directpost">
+      <input type="button" value="按此下載圖片" class="submit btn btn-danger btn-lg" id="normalSubmit" style="margin-bottom:10px;">
+    </form>
+  </div>
+</div>
